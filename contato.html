@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Vitalis Odontologia</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo"
+          ><i class="ph-fill ph-tooth"></i> Vitalis</a
+        >
+        <div class="mobile-toggle">< class="ph ph-list"><//div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">A Clínica</a></li>
+            <li><a href="servicos.html">Tratamentos</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+            <li>
+              <a href="https://wa.me/5594999999999" class="btn-header"
+                >Agendar Consulta</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="page-hero"
+        style="
+          padding: 120px 0 60px;
+          text-align: center;
+          background: var(--bg-light);
+        "
+      >
+        <div class="container">
+          <div class="section-header">
+            <h2>Fale Conosco</h2>
+            <p>
+              Estamos prontos para atender você. Entre em contato ou venha nos
+              visitar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="container contact-wrapper">
+          <div class="contact-info">
+            <div class="info-card">
+              <i class="ph-fill ph-map-pin"></i>
+              <h3>Endereço</h3>
+              <p>Av. Tocantins, 123<br />Nova Marabá, Marabá - PA</p>
+            </div>
+
+            <div class="info-card">
+              <i class="ph-fill ph-phone"></i>
+              <h3>Telefones</h3>
+              <p>(94) 3321-0000<br />(94) 99999-9999 (WhatsApp)</p>
+            </div>
+
+            <div class="info-card">
+              <i class="ph-fill ph-envelope-simple"></i>
+              <h3>E-mail</h3>
+              <p>contato@vitalis.com.br<br />agendamento@vitalis.com.br</p>
+            </div>
+
+            <div class="info-card">
+              <i class="ph-fill ph-clock"></i>
+              <h3>Horários</h3>
+              <p>Seg a Sex: 08h às 18h<br />Sáb: 08h às 12h</p>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <h3>Envie uma mensagem</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Ex: João da Silva"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Telefone / WhatsApp</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="(94) 99999-9999"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="seu@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Gostaria de saber sobre..."
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn"
+                style="width: 100%; border: none; cursor: pointer"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.244302193245!2d-49.1234567!3d-5.3678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjInMDUuNiJTIDQ5wrAwNycwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+          style="width: 100%; height: 450px; border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a
+              href="#"
+              class="logo"
+              style="color: white; margin-bottom: 20px; display: block"
+              ><i class="ph-fill ph-tooth"></i> Vitalis</a
+            >
+            <p>
+              Responsável Técnico:<br />
+              Dr. Nome do Cliente<br />CRO-PA 1234
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Menu</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">A Clínica</a></li>
+              <li><a href="servicos.html">Tratamentos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Tratamentos</h3>
+            <ul class="footer-links">
+              <li><a href="servicos.html">Implantes</a></li>
+              <li><a href="servicos.html">Ortodontia</a></li>
+              <li><a href="servicos.html">Clareamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Fale Conosco</h3>
+            <ul class="footer-links">
+              <li><i class="ph ph-map-pin"></i> Av. Tocantins, 123 - Marabá</li>
+              <li><i class="ph ph-phone"></i> (94) 3321-0000</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Vitalis Odontologia.</p>
+          <p>Desenvolvido por <strong>Nycolas T Santos</strong></p>
+
+          <p>
+            <a
+              href="https://www.instagram.com/nycolast.dev?igsh=em9mMTdhcXJwMmR0&utm_source=qr"
+              target="_blank"
+            >
+              <i class="ph ph-instagram-logo"></i>
+              @Nycolast.dev
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5594999999999"
+      class="btn-whatsapp-float"
+      target="_blank"
+      ><i class="ph-fill ph-whatsapp-logo"></i
+    ></a>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/form-validate.js"></script>
+  </body>
+</html>

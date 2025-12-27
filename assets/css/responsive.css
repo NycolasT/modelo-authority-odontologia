@@ -1,0 +1,152 @@
+/* 1. NOTEBOOKS PEQUENOS E TABLETS PAISAGEM (Até 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --container-width: 90%; /* Margem de segurança nas bordas */
+    --section-padding: 70px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .features-grid {
+    gap: 20px;
+  }
+
+  /* No footer, mudamos de 4 colunas para 2 colunas */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* 2. TABLETS RETRATO (Até 768px) */
+@media (max-width: 768px) {
+  /* MENU MOBILE (Aparece o Hambúrguer) */
+  .mobile-toggle {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background-color: var(--bg-white);
+    padding: 80px 30px;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1050;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+  }
+
+  /* HERO */
+  .hero-container {
+    flex-direction: column-reverse; /* Inverte a ordem */
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  /* SOBRE (Arrumando as imagens empilhadas) */
+  .split-layout {
+    flex-direction: column;
+  }
+
+  .about-image-stack {
+    width: 100%;
+    height: 400px; /* Altura fixa para não quebrar */
+    margin-bottom: 40px;
+  }
+
+  .img-back {
+    width: 80%;
+    left: 10%;
+  } /* Centraliza visualmente */
+  .img-front {
+    width: 60%;
+    right: 5%;
+    bottom: -20px;
+  }
+}
+
+/* 3. CELULARES GRANDES (Até 600px) */
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* 1 coluna só */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr; /* Footer vira uma tripa só */
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+
+  /* Badge flutuante centralizado */
+  .floating-badge {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+/* 4. CELULARES PEQUENOS (Até 400px - iPhone SE, Androids antigos) */
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btns {
+    flex-direction: column; /* Botões um embaixo do outro */
+    width: 100%;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image-stack {
+    height: 300px;
+  } /* Diminui a altura das imagens */
+}

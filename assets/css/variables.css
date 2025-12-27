@@ -1,0 +1,22 @@
+:root {
+  /* CORES DA MARCA (Vitalis) */
+  --primary-color: #00a896; /* Verde Água Escuro - Saúde/Calma */
+  --primary-hover: #028072; /* Variação mais escura */
+  --secondary-color: #023e8a; /* Azul Marinho - Confiança/Autoridade */
+
+  /* CORES NEUTRAS */
+  --bg-white: #ffffff;
+  --bg-light: #f0f7f7; /* Um cinza levemente azulado */
+  --text-color: #333333;
+  --text-light: #666666;
+  --border-color: #e0e0e0;
+
+  /* FONTES */
+  /* Sugestão: Vamos usar fontes do Google depois, por enquanto vai a do sistema */
+  --font-main: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  /* LAYOUT */
+  --container-width: 1200px; /* Um pouco mais largo que o modelo 1 */
+  --header-height: 80px; /* Cabeçalho mais imponente */
+  --section-padding: 100px 0;
+}

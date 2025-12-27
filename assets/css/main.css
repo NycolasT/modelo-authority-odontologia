@@ -1,0 +1,62 @@
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./layout.css"); /* Cabeçalho e Rodapé */
+@import url("./pages.css"); /* Conteúdo específico das páginas */
+@import url("./responsive.css"); /* Adaptação Mobile */
+
+/* Estilos Globais Utilitários */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Títulos de Seção Padrão */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Detalhe visual embaixo do título (tracinho verde) */
+.section-header h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+/* Botão Padrão */
+.btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 50px; /* Botão arredondado é mais amigável */
+  box-shadow: 0 4px 15px rgba(0, 168, 150, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 168, 150, 0.4);
+}
